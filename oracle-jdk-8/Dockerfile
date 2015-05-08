@@ -1,4 +1,4 @@
-# Dockerfile for scottabernethy/java
+# Dockerfile for scottabernethy/java JDK 8
 FROM scottabernethy/debian
 
 ENV JAVA_VERSION 8
