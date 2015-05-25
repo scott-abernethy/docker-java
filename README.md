@@ -6,7 +6,7 @@
 - [`8` (*Oracle JDK 8*)](oracle-jdk-8/Dockerfile)
 - [`jre7` (*Oracle Server JRE 7*)](oracle-sjre-7/Dockerfile)
 - [`jre8` (*Oracle Server JRE 8*)](oracle-sjre-8/Dockerfile)
-- [`z8` (*Zulu JDK 8*)](zulu-jdk-8)
+- [`z8` (*Zulu JDK 8*)](zulu-jdk-8/Dockerfile)
 
 ## Licensing and Terms
 
