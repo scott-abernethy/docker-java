@@ -6,7 +6,7 @@ ENV ZULU_BUILD_DATE 2015-04-8.7
 ENV JAVA_HOME /opt/${ZULU_BUILD}
 
 RUN \
-	http_proxy=http://proxyw.fnzsl.com:8080 curl -e http://www.azulsystems.com/products/zulu/downloads\#Linux \
+	curl -e http://www.azulsystems.com/products/zulu/downloads\#Linux \
 		-o /tmp/jdk.zip \
 		http://cdn.azulsystems.com/zulu/${ZULU_BUILD_DATE}-bin/${ZULU_BUILD}.zip && \
 	# echo "e860784aacc77b2b865dd1e6a5d9392c  /tmp/jdk.zip" | md5sum -c && \

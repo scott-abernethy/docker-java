@@ -13,7 +13,7 @@ RUN \
 		--cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
 		--header "Cookie: oraclelicense=accept-securebackup-cookie;" \
 		http://download.oracle.com/otn-pub/java/jdk/"${JAVA_VERSION}"u"${JAVA_UPDATE}"-b"${JAVA_BUILD}"/jdk-"${JAVA_VERSION}"u"${JAVA_UPDATE}"-linux-x64.tar.gz && \
-	echo "58486d7b16d7b21fbea7374adc109233 /tmp/download.tar.gz" | md5sum --check && \
+	echo "1ad9a5be748fb75b31cd3bd3aa339cac  /tmp/download.tar.gz" | md5sum --check && \
 	mkdir -p /usr/lib/jvm && \
 	tar -xzf /tmp/download.tar.gz -C /usr/lib/jvm && \
 	rm /tmp/download.tar.gz && \
