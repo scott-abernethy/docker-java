@@ -2,9 +2,9 @@
 
 ## Supported tags
 
-- [`7` (*Oracle JDK 7*)](oracle-jdk-7/Dockerfile)
-- [`8` (*Oracle JDK 8*)](oracle-jdk-8/Dockerfile)
-- [`z8` (*Zulu JDK 8*)](zulu-jdk-8/Dockerfile)
+- [`7` (*Oracle JDK 7*)](oracle-jdk-7/Dockerfile) `docker pull scottabernethy/java:7`
+- [`8` (*Oracle JDK 8*)](oracle-jdk-8/Dockerfile) `docker pull scottabernethy/java:8`
+- [`z8` (*Zulu JDK 8*)](zulu-jdk-8/Dockerfile) `docker pull scottabernethy/java:z8`
 
 ## Licensing and Terms
 
