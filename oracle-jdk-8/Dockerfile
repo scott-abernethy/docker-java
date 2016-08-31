@@ -2,8 +2,9 @@
 FROM scottabernethy/debian
 
 ENV JAVA_VERSION 8
-ENV JAVA_UPDATE 77
-ENV JAVA_BUILD "03"
+ENV JAVA_UPDATE 102 
+ENV JAVA_BUILD "14"
+ENV CHECKSUM bac58dcec9bb85859810a2a6acba740b
 
 ENV JAVA_HOME /usr/lib/jvm/jdk1.${JAVA_VERSION}.0_${JAVA_UPDATE}
 
@@ -13,7 +14,7 @@ RUN \
 		--cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
 		--header "Cookie: oraclelicense=accept-securebackup-cookie;" \
 		http://download.oracle.com/otn-pub/java/jdk/"${JAVA_VERSION}"u"${JAVA_UPDATE}"-b"${JAVA_BUILD}"/jdk-"${JAVA_VERSION}"u"${JAVA_UPDATE}"-linux-x64.tar.gz && \
-	echo "ee501bef73ba7fac255f0593e595d8eb  /tmp/download.tar.gz" | md5sum --check && \
+	echo "$CHECKSUM  /tmp/download.tar.gz" | md5sum --check && \
 	mkdir -p /usr/lib/jvm && \
 	tar -xzf /tmp/download.tar.gz -C /usr/lib/jvm && \
 	rm /tmp/download.tar.gz && \
